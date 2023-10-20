@@ -1,5 +1,5 @@
 sudo apt install axel -y
-GET=axel -n 5
+GET="axel -n 5"
 
 sudo snap install --classic code
 
