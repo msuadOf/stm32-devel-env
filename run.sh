@@ -10,8 +10,9 @@ sudo apt install apt-fast
 sudo apt-fast install build-essential git gcc cmake ninja-build openocd vim fuse -y
 
 #cubemx
-$GET https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/46/64/3f/1b/cb/ec/4d/10/stm32cubemx-lin-v6-9-2/files/stm32cubemx-lin-v6-9-2.zip/jcr:content/translations/en.stm32cubemx-lin-v6-9-2.zip \
-        -o ./resource/
+git clone https://github.com/msuadOf/CubeMX_Packege.git
+cp ./CubeMX_Packege/en.stm32cubemx-lin-v6-9-2.zip ./resource/en.stm32cubemx-lin-v6-9-2.zip
+# $GET https://www.st.com/content/ccc/resource/technical/software/sw_development_suite/group0/46/64/3f/1b/cb/ec/4d/10/stm32cubemx-lin-v6-9-2/files/stm32cubemx-lin-v6-9-2.zip/jcr:content/translations/en.stm32cubemx-lin-v6-9-2.zip -o ./resource/
 unzip ./resource/en.stm32cubemx-lin-v6-9-2.zip -d ./cubemx
 sudo chmod -R 777 ./cubemx/Setup*
 ./cubemx/Setup*
